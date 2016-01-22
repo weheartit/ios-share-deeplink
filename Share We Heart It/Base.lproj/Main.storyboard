@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10089" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="MAW-K5-SOO">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10072.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="4FF-z1-RdJ">
+            <objects>
+                <viewController id="MAW-K5-SOO" customClass="ViewController" customModule="Share_WHI" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="v3A-Og-w2d"/>
+                        <viewControllerLayoutGuide type="bottom" id="QYd-g5-u22"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="p6Y-vt-dXY">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tja-dl-pY5">
+                                <rect key="frame" x="194" y="274" width="213" height="52"/>
+                                <color key="backgroundColor" red="1" green="0.40000000000000002" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="213" id="5wP-Gr-JxS"/>
+                                    <constraint firstAttribute="height" constant="52" id="Xws-rw-lcN"/>
+                                </constraints>
+                                <state key="normal" title="Share with We Heart It">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="MAW-K5-SOO" eventType="touchUpInside" id="zUf-Db-Vzj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Tja-dl-pY5" firstAttribute="centerX" secondItem="p6Y-vt-dXY" secondAttribute="centerX" id="QOk-rE-vHb"/>
+                            <constraint firstItem="Tja-dl-pY5" firstAttribute="centerY" secondItem="p6Y-vt-dXY" secondAttribute="centerY" id="hDj-Dq-U2M"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="buttonShare" destination="Tja-dl-pY5" id="RXa-yF-S9u"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="daM-MB-Dht" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="848" y="659"/>
+        </scene>
+    </scenes>
+</document>
