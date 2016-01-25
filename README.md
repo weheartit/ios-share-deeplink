@@ -1,4 +1,4 @@
-# Share with We Heart It
+# Share Images To We Heart It
 
 This project is an example of how you can share images from your own app directly to We Heart It app, by using deep links.
 
