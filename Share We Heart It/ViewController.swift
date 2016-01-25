@@ -16,10 +16,15 @@ class ViewController: UIViewController {
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        
-        if !isInstalled() {
-            buttonShare.setTitle("Install We Heart It", forState: .Normal)
-        }
+
+        buttonShare.layer.borderWidth = 0.5
+        buttonShare.layer.cornerRadius = 4
+        buttonShare.layer.borderColor = UIColor(
+            red: CGFloat((0xCCCCCC & 0xFF0000) >> 16) / 255.0,
+            green: CGFloat((0xCCCCCC & 0x00FF00) >> 8) / 255.0,
+            blue: CGFloat((0xCCCCCC & 0x0000FF)) / 255.0,
+            alpha: 1
+        ).CGColor
     }
     
     

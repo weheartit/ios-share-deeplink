@@ -8,7 +8,7 @@
         <!--View Controller-->
         <scene sceneID="4FF-z1-RdJ">
             <objects>
-                <viewController id="MAW-K5-SOO" customClass="ViewController" customModule="Share_WHI" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="MAW-K5-SOO" customClass="ViewController" customModule="Share_We_Heart_It" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="v3A-Og-w2d"/>
                         <viewControllerLayoutGuide type="bottom" id="QYd-g5-u22"/>
@@ -17,14 +17,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tja-dl-pY5">
-                                <rect key="frame" x="194" y="274" width="213" height="52"/>
-                                <color key="backgroundColor" red="1" green="0.40000000000000002" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tja-dl-pY5">
+                                <rect key="frame" x="270" y="316" width="60" height="60"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="213" id="5wP-Gr-JxS"/>
-                                    <constraint firstAttribute="height" constant="52" id="Xws-rw-lcN"/>
+                                    <constraint firstAttribute="width" constant="60" id="5wP-Gr-JxS"/>
+                                    <constraint firstAttribute="height" constant="60" id="Xws-rw-lcN"/>
                                 </constraints>
-                                <state key="normal" title="Share with We Heart It">
+                                <state key="normal" backgroundImage="Icon">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -36,11 +35,32 @@
                                     <action selector="buttonPressed:" destination="MAW-K5-SOO" eventType="touchUpInside" id="zUf-Db-Vzj"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap Icon to Share" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tgq-z2-tpu">
+                                <rect key="frame" x="229" y="384" width="143" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="143" id="qJr-Xk-y4N"/>
+                                    <constraint firstAttribute="height" constant="21" id="u2u-fR-Px5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                <color key="textColor" red="0.39607843139999999" green="0.39607843139999999" blue="0.39607843139999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Dog" translatesAutoresizingMaskIntoConstraints="NO" id="Mbb-pA-4yk">
+                                <rect key="frame" x="225" y="135" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="J5V-vR-d5g"/>
+                                    <constraint firstAttribute="height" constant="150" id="cID-HL-ygS"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Tja-dl-pY5" firstAttribute="centerX" secondItem="p6Y-vt-dXY" secondAttribute="centerX" id="QOk-rE-vHb"/>
-                            <constraint firstItem="Tja-dl-pY5" firstAttribute="centerY" secondItem="p6Y-vt-dXY" secondAttribute="centerY" id="hDj-Dq-U2M"/>
+                            <constraint firstItem="Tgq-z2-tpu" firstAttribute="centerY" secondItem="p6Y-vt-dXY" secondAttribute="centerY" constant="94.5" id="Uhy-rM-xBM"/>
+                            <constraint firstItem="Tgq-z2-tpu" firstAttribute="centerX" secondItem="p6Y-vt-dXY" secondAttribute="centerX" id="Y4d-GW-DrW"/>
+                            <constraint firstItem="Tja-dl-pY5" firstAttribute="centerY" secondItem="p6Y-vt-dXY" secondAttribute="centerY" constant="46" id="hDj-Dq-U2M"/>
+                            <constraint firstItem="Mbb-pA-4yk" firstAttribute="centerX" secondItem="p6Y-vt-dXY" secondAttribute="centerX" id="kga-da-Drm"/>
+                            <constraint firstItem="Mbb-pA-4yk" firstAttribute="centerY" secondItem="p6Y-vt-dXY" secondAttribute="centerY" constant="-90" id="sIG-to-hpm"/>
                         </constraints>
                     </view>
                     <connections>
@@ -52,4 +72,8 @@
             <point key="canvasLocation" x="848" y="659"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Dog" width="500" height="500"/>
+        <image name="Icon" width="60" height="60"/>
+    </resources>
 </document>
