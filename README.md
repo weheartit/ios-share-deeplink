@@ -28,6 +28,6 @@ if !isInstalled {
 
 ## Parameters
 
-- **via** (required): this is your application name
+- **via** (required): this is your application name. Important: we will need to whitelist your app name. Please contact us at support@weheartit.com
 - **tags**: this is some tags about the image. User will be able to edit it before upload the image
 - **caption**: this is the title of the image. User will alsobe be able to edit it before upload the image
